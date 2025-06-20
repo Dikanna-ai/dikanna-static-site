@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Dikanna Voice API</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <header>
+        <h1>Dikanna Voice API</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Features</a>
+            <a href="#">Docs</a>
+            <a href="#">Pricing</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Authentic Igbo Pronunciation at Your Fingertips</h2>
+        <p>Empower your app, game, or content with cultural depth and linguistic precision using Dikanna Voice API.</p>
+        <a href="#docs" class="btn">Get Started</a>
+    </section>
+
+    <section class="features">
+        <h3>Why Dikanna?</h3>
+        <ul>
+            <li>🎙️ Real Voice + Tonal Accuracy</li>
+            <li>🔡 SSML & Phoneme Support</li>
+            <li>🌍 Built for African Languages</li>
+        </ul>
+    </section>
+
+    <section id="docs">
+        <h3>Quick Start (Python)</h3>
+        <pre><code>pip install requests
+
+# Send text to voice API
+import requests
+url = "https://your-render-url/voice"
+data = { "text": "Ndewo", "model_id": "eleven_multilingual_v2" }
+headers = { "Authorization": "Bearer YOUR_API_KEY" }
+res = requests.post(url, json=data, headers=headers)
+with open("voice.mp3", "wb") as f:
+    f.write(res.content)</code></pre>
+        <p>View full documentation on <a href="https://github.com/dikanna-ai/dikanna-voice-api" target="_blank">GitHub</a></p>
+    </section>
+
+    <section class="pricing">
+        <h3>Pricing</h3>
+        <div class="plans">
+            <div class="plan">
+                <h4>Starter</h4>
+                <p>$9/mo – 100 words</p>
+            </div>
+            <div class="plan">
+                <h4>Pro</h4>
+                <p>$19/mo – 1,000 requests</p>
+            </div>
+            <div class="plan">
+                <h4>Mini</h4>
+                <p>Free – 3 test requests</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Dikanna AI. All rights reserved.</p>
+    </footer>
+</body>
+</html>
