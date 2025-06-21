@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,23 +7,24 @@
     <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
+
     <header>
         <h1>Dikanna Voice API</h1>
         <nav>
-            <a href="#">Home</a>
-            <a href="#">Features</a>
-            <a href="#">Docs</a>
-            <a href="#">Pricing</a>
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#docs">Docs</a>
+            <a href="#pricing">Pricing</a>
         </nav>
     </header>
 
-    <section class="hero">
+    <section id="home" class="hero">
         <h2>Authentic Igbo Pronunciation at Your Fingertips</h2>
         <p>Empower your app, game, or content with cultural depth and linguistic precision using Dikanna Voice API.</p>
         <a href="#docs" class="btn">Get Started</a>
     </section>
 
-    <section class="features">
+    <section id="features" class="features">
         <h3>Why Dikanna?</h3>
         <ul>
             <li>🎙️ Real Voice + Tonal Accuracy</li>
@@ -45,10 +45,12 @@ headers = { "Authorization": "Bearer YOUR_API_KEY" }
 res = requests.post(url, json=data, headers=headers)
 with open("voice.mp3", "wb") as f:
     f.write(res.content)</code></pre>
-        <p>View full documentation on <a href="https://github.com/dikanna-ai/dikanna-voice-api" target="_blank">GitHub</a></p>
+        <p>View full documentation on 
+            <a href="https://github.com/dikanna-ai/dikanna-voice-api" target="_blank">GitHub</a>
+        </p>
     </section>
 
-    <section class="pricing">
+    <section id="pricing" class="pricing">
         <h3>Pricing</h3>
         <div class="plans">
             <div class="plan">
@@ -69,5 +71,6 @@ with open("voice.mp3", "wb") as f:
     <footer>
         <p>&copy; 2025 Dikanna AI. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
