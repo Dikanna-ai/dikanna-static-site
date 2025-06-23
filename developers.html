@@ -3,65 +3,58 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Dikanna Developers</title>
-  <link rel="stylesheet" href="style.css"/>
+  <title>Dikanna for Developers</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>Dikanna Voice API</h1>
+    <h1>Dikanna Voice API for Developers</h1>
     <nav>
       <a href="index.html">Home</a>
-      <a href="developers.html">Developers</a>
+      <a href="#quickstart">Quick Start</a>
+      <a href="#limits">Usage Limits</a>
+      <a href="#github">GitHub</a>
     </nav>
   </header>
 
-  <section class="hero">
-    <h2>🎧 Developer Portal</h2>
-    <p>Everything you need to build with Dikanna Voice API — documentation, samples, and SDKs.</p>
+  <section id="quickstart">
+    <h2>🚀 Quick Start</h2>
+    <pre><code>pip install requests
+
+# Send text to Dikanna Voice API
+import requests
+
+url = "https://dikanna-web.onrender.com/voice"
+data = {
+    "text": "Ndewo",
+    "model_id": "eleven_multilingual_v2"
+}
+headers = {
+    "Authorization": "Bearer YOUR_API_KEY"
+}
+
+res = requests.post(url, json=data, headers=headers)
+with open("voice.mp3", "wb") as f:
+    f.write(res.content)</code></pre>
+    <p>Replace <code>YOUR_API_KEY</code> with your real key.</p>
   </section>
 
-  <section class="features">
-    <h3>🔐 Authentication</h3>
-    <p>Use your secret API key in the <code>Authorization</code> header:</p>
-    <pre><code>Authorization: Bearer YOUR_API_KEY</code></pre>
-  </section>
-
-  <section class="features">
-    <h3>📡 Sample Request</h3>
-    <pre><code>POST https://dikanna-voice-api.onrender.com/voice
-
-{
-  "text": "Ndewo",
-  "model_id": "eleven_multilingual_v2"
-}</code></pre>
-    <p>Returns an MP3 stream with accurate tonal pronunciation.</p>
-  </section>
-
-  <section class="features">
-    <h3>🚦 Rate Limits</h3>
+  <section id="limits">
+    <h2>📊 Usage Limits</h2>
     <ul>
-      <li>🆓 Free Plan: 3 requests/day</li>
-      <li>💼 Pro: 1,000 requests/month</li>
-      <li>📊 Enterprise: Custom usage + priority support</li>
+      <li>Starter Plan: $9/mo for 100 words</li>
+      <li>Pro Plan: $19/mo for 1,000 requests</li>
+      <li>Mini Plan: Free for 3 test requests</li>
     </ul>
   </section>
 
-  <section class="features">
-    <h3>🎙️ Sample Audio Library</h3>
-    <p>Preview tonal samples on the <a href="index.html#features">homepage</a> or access raw MP3s on <a href="https://github.com/Dikanna-ai/dikanna-static-site/tree/main/audio" target="_blank">GitHub → audio</a>.</p>
-  </section>
-
-  <section class="features">
-    <h3>📦 SDKs & Integrations</h3>
-    <ul>
-      <li><a href="https://github.com/Dikanna-ai/dikanna-voice-api" target="_blank">Python SDK</a></li>
-      <li><a href="#">JavaScript (coming soon)</a></li>
-      <li><a href="#">Unity Plugin (beta)</a></li>
-    </ul>
+  <section id="github">
+    <h2>📚 Documentation & SDK</h2>
+    <p>Visit our full documentation and SDK on <a href="https://github.com/dikanna-ai/dikanna-voice-api" target="_blank">GitHub</a>.</p>
   </section>
 
   <footer>
-    <p>&copy; 2025 Dikanna AI. Built with soul.</p>
+    <p>&copy; 2025 Dikanna AI. All rights reserved.</p>
   </footer>
 </body>
 </html>
