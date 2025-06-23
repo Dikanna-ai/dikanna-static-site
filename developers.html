@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dikanna Developers</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>Dikanna Voice API</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="developers.html">Developers</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>🎧 Developer Portal</h2>
+    <p>Everything you need to build with Dikanna Voice API — documentation, samples, and SDKs.</p>
+  </section>
+
+  <section class="features">
+    <h3>🔐 Authentication</h3>
+    <p>Use your secret API key in the <code>Authorization</code> header:</p>
+    <pre><code>Authorization: Bearer YOUR_API_KEY</code></pre>
+  </section>
+
+  <section class="features">
+    <h3>📡 Sample Request</h3>
+    <pre><code>POST https://dikanna-voice-api.onrender.com/voice
+
+{
+  "text": "Ndewo",
+  "model_id": "eleven_multilingual_v2"
+}</code></pre>
+    <p>Returns an MP3 stream with accurate tonal pronunciation.</p>
+  </section>
+
+  <section class="features">
+    <h3>🚦 Rate Limits</h3>
+    <ul>
+      <li>🆓 Free Plan: 3 requests/day</li>
+      <li>💼 Pro: 1,000 requests/month</li>
+      <li>📊 Enterprise: Custom usage + priority support</li>
+    </ul>
+  </section>
+
+  <section class="features">
+    <h3>🎙️ Sample Audio Library</h3>
+    <p>Preview tonal samples on the <a href="index.html#features">homepage</a> or access raw MP3s on <a href="https://github.com/Dikanna-ai/dikanna-static-site/tree/main/audio" target="_blank">GitHub → audio</a>.</p>
+  </section>
+
+  <section class="features">
+    <h3>📦 SDKs & Integrations</h3>
+    <ul>
+      <li><a href="https://github.com/Dikanna-ai/dikanna-voice-api" target="_blank">Python SDK</a></li>
+      <li><a href="#">JavaScript (coming soon)</a></li>
+      <li><a href="#">Unity Plugin (beta)</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Dikanna AI. Built with soul.</p>
+  </footer>
+</body>
+</html>
