@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dikanna Voice API – Pronunciations</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      color: #222;
+    }
+
+    header, footer {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .audio-demos {
+      max-width: 720px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+
+    .audio-demos h3 {
+      font-size: 1.5rem;
+      color: #0a8754;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .audio-card {
+      background: #f9f9f9;
+      border-left: 5px solid #0a8754;
+      padding: 16px;
+      margin: 12px 0;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    .audio-card p {
+      margin: 0.3rem 0;
+    }
+
+    .badge {
+      background: #0a8754;
+      color: #fff;
+      font-size: 0.75em;
+      padding: 2px 6px;
+      border-radius: 12px;
+      margin-left: 8px;
+    }
+
+    audio {
+      width: 100%;
+      margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Dikanna Voice API</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="index.html#features">Features</a>
+      <a href="index.html#docs">Docs</a>
+      <a href="index.html#pricing">Pricing</a>
+      <a href="pronunciations.html">Pronunciations</a>
+      <a href="developers.html">Developers</a>
+    </nav>
+  </header>
+
+  <section class="audio-demos">
+    <h3>🎧 TrueTone™ Verified Samples</h3>
+
+    <div class="audio-card">
+      <p><strong>Igbo:</strong> Ndewo <span class="badge">✅ TrueTone™ Verified</span></p>
+      <p><em>English:</em> Greetings</p>
+      <audio controls>
+        <source src="audio/ndewo.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+    <div class="audio-card">
+      <p><strong>Igbo:</strong> Chukwu <span class="badge">✅ TrueTone™ Verified</span></p>
+      <p><em>English:</em> God</p>
+      <audio controls>
+        <source src="audio/chukwu.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+    <div class="audio-card">
+      <p><strong>Igbo:</strong> Ọganihu <span class="badge">✅ TrueTone™ Verified</span></p>
+      <p><em>English:</em> Progress</p>
+      <audio controls>
+        <source src="audio/oganihu.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Dikanna AI. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
